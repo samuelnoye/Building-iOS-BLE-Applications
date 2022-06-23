@@ -9,6 +9,7 @@ import UIKit
 
 class AppFLowController {
     let window: UIWindow
+    var central: BLECcentral?
     
     init(window: UIWindow) {
         self.window = window
@@ -19,5 +20,6 @@ class AppFLowController {
         viewController.view.backgroundColor = .blue
         window.rootViewController = viewController
         window.makeKeyAndVisible()
+        central = BLECcentral()
     }
 }
