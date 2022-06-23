@@ -13,6 +13,8 @@
 		D5CB18DC28637BF100031735 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CB18DA28637BF100031735 /* Main.storyboard */; };
 		D5CB18DE28637BF300031735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5CB18DD28637BF300031735 /* Assets.xcassets */; };
 		D5CB18E128637BF300031735 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CB18DF28637BF300031735 /* LaunchScreen.storyboard */; };
+		D5CB18E92864A0F400031735 /* AppFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CB18E82864A0F400031735 /* AppFlowController.swift */; };
+		D5CB18EB2864A67200031735 /* BLECentral.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CB18EA2864A67200031735 /* BLECentral.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		D5CB18DD28637BF300031735 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5CB18E028637BF300031735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5CB18E228637BF300031735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5CB18E82864A0F400031735 /* AppFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowController.swift; sourceTree = "<group>"; };
+		D5CB18EA2864A67200031735 /* BLECentral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLECentral.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				D5CB18DD28637BF300031735 /* Assets.xcassets */,
 				D5CB18DF28637BF300031735 /* LaunchScreen.storyboard */,
 				D5CB18E228637BF300031735 /* Info.plist */,
+				D5CB18E82864A0F400031735 /* AppFlowController.swift */,
+				D5CB18EA2864A67200031735 /* BLECentral.swift */,
 			);
 			path = "Building iOS BLE Applications";
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 				D5CB18D928637BF100031735 /* ViewController.swift in Sources */,
 				D5CB18D528637BF100031735 /* AppDelegate.swift in Sources */,
 				D5CB18D728637BF100031735 /* SceneDelegate.swift in Sources */,
+				D5CB18EB2864A67200031735 /* BLECentral.swift in Sources */,
+				D5CB18E92864A0F400031735 /* AppFlowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +300,6 @@
 				INFOPLIST_FILE = "Building iOS BLE Applications/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +327,6 @@
 				INFOPLIST_FILE = "Building iOS BLE Applications/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
