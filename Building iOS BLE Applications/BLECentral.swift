@@ -10,7 +10,8 @@ import CoreBluetooth
 
 class BLECcentral: NSObject, CBCentralManagerDelegate {
    
-    var  manager: CBCentralManager!
+    var manager: CBCentralManager!
+    var discoveredPeripherals = [CBPeripheral]()
     
     override init() {
         super.init()
@@ -29,6 +30,9 @@ class BLECcentral: NSObject, CBCentralManagerDelegate {
         }else{
             print("Central in unavailable:\(central.state.rawValue)")
         }
+    }
+    func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
+        discoveredPeripherals.append(peripheral)
     }
 
 }
