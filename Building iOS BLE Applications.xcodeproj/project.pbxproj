@@ -15,6 +15,7 @@
 		D5CB18E128637BF300031735 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CB18DF28637BF300031735 /* LaunchScreen.storyboard */; };
 		D5CB18E92864A0F400031735 /* AppFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CB18E82864A0F400031735 /* AppFlowController.swift */; };
 		D5CB18EB2864A67200031735 /* BLECentral.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CB18EA2864A67200031735 /* BLECentral.swift */; };
+		D5CB18EF2864B22A00031735 /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CB18EE2864B22A00031735 /* DiscoveryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D5CB18E228637BF300031735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5CB18E82864A0F400031735 /* AppFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowController.swift; sourceTree = "<group>"; };
 		D5CB18EA2864A67200031735 /* BLECentral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLECentral.swift; sourceTree = "<group>"; };
+		D5CB18EE2864B22A00031735 /* DiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				D5CB18E228637BF300031735 /* Info.plist */,
 				D5CB18E82864A0F400031735 /* AppFlowController.swift */,
 				D5CB18EA2864A67200031735 /* BLECentral.swift */,
+				D5CB18EE2864B22A00031735 /* DiscoveryViewController.swift */,
 			);
 			path = "Building iOS BLE Applications";
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5CB18D928637BF100031735 /* ViewController.swift in Sources */,
+				D5CB18EF2864B22A00031735 /* DiscoveryViewController.swift in Sources */,
 				D5CB18D528637BF100031735 /* AppDelegate.swift in Sources */,
 				D5CB18D728637BF100031735 /* SceneDelegate.swift in Sources */,
 				D5CB18EB2864A67200031735 /* BLECentral.swift in Sources */,
