@@ -12,7 +12,7 @@ class BLECcentral: NSObject, CBCentralManagerDelegate {
    
     var manager: CBCentralManager!
     var discoveredPeripherals = [CBPeripheral]()
-    
+    var onDiscovered: (()->Void)?
     override init() {
         super.init()
         manager = CBCentralManager(delegate: self, queue: nil)
@@ -33,6 +33,7 @@ class BLECcentral: NSObject, CBCentralManagerDelegate {
     }
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
         discoveredPeripherals.append(peripheral)
+        onDiscovered?()
     }
 
 }
