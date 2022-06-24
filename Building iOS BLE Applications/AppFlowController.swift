@@ -16,10 +16,11 @@ class AppFLowController {
     }
     
     func start() {
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .blue
-        window.rootViewController = viewController
-        window.makeKeyAndVisible()
         central = BLECcentral()
+        let viewController = DiscoveryViewController()
+                viewController.central = central
+                window.rootViewController = viewController
+                window.makeKeyAndVisible()
+                
     }
 }

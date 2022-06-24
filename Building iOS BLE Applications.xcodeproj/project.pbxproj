@@ -302,6 +302,8 @@
 				DEVELOPMENT_TEAM = R9G43NZ9J2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Building iOS BLE Applications/Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This App uses bluetooth for scanning peripheral devices";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This App uses bluetooth for scanning peripheral devices";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -329,6 +331,8 @@
 				DEVELOPMENT_TEAM = R9G43NZ9J2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Building iOS BLE Applications/Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This App uses bluetooth for scanning peripheral devices";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This App uses bluetooth for scanning peripheral devices";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
