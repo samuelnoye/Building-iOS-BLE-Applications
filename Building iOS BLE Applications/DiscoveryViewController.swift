@@ -33,7 +33,8 @@ class DiscoveryViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
         let peripheral = central.discoveredPeripherals[indexPath.row]
-        cell.textLabel?.text = peripheral.name
+        print(peripheral)
+        cell.textLabel?.text = peripheral.name ?? "Name"
         cell.detailTextLabel?.text = peripheral.identifier.uuidString
 
         return cell
