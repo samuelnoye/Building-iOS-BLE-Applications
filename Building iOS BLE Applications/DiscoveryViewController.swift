@@ -15,6 +15,7 @@ class DiscoveryViewController: UITableViewController {
         central.onDiscovered = { [weak self] in
             self?.tableView.reloadData()
         }
+        tableView.register(UINib(nibName: "DiscoveredPeripheralCell", bundle: nil), forCellReuseIdentifier: "DiscoveredPeripheralCell")
     }
 
     // MARK: - Table view data source
@@ -31,11 +32,17 @@ class DiscoveryViewController: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
-        let peripheral = central.discoveredPeripherals[indexPath.row]
-        cell.textLabel?.text = peripheral.name
-        cell.detailTextLabel?.text = peripheral.identifier.uuidString
-
+//        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
+//        let peripheral = central.discoveredPeripherals[indexPath.row]
+//        print(peripheral)
+//        cell.textLabel?.text = peripheral.name ?? "Name"
+//        cell.detailTextLabel?.text = peripheral.identifier.uuidString
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DiscoveredPeripheralCell", for: indexPath) as! DiscoveredPeripheralCell
+        let discoveredPeripheral = central.discoveredPeripherals[indexPath.row]
+        cell.identifierLbl.text = discoveredPeripheral.peripheral.identifier.uuidString
+        cell.rssiLbl.text = discoveredPeripheral.rssi.stringValue
+        cell.advertisementlbl.text = discoveredPeripheral.advertisementData.debugDescription
+        cell.rssiLbl.textColor = .red
         return cell
     }
     
