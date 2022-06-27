@@ -11,7 +11,7 @@ import CoreBluetooth
 class BLECcentral: NSObject, CBCentralManagerDelegate {
    
     var manager: CBCentralManager!
-    var discoveredPeripherals = [CBPeripheral]()
+    var discoveredPeripherals = [DiscoveredPeripheral]()
     var onDiscovered: (()->Void)?
     let service = CBUUID(string: "6E400001-B5A3-F393-E0A9-E50E24DCCA9E")
     override init() {
@@ -20,7 +20,8 @@ class BLECcentral: NSObject, CBCentralManagerDelegate {
     }
     // MARK:- Scan for devices
     func scanForPeripherals(){
-        manager.scanForPeripherals(withServices: nil, options: nil)
+        let options: [String: Any] = [CBCentralManagerScanOptionAllowDuplicatesKey: false]
+        manager.scanForPeripherals(withServices: nil, options: options )
     }
     
 // MARK:- CBCentralManagerDelegate
@@ -33,7 +34,7 @@ class BLECcentral: NSObject, CBCentralManagerDelegate {
         }
     }
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-        discoveredPeripherals.append(peripheral)
+        discoveredPeripherals.append(DiscoveredPeripheral(peripheral: peripheral, rssi: RSSI, advertisementData: advertisementData))
         onDiscovered?()
     }
 
