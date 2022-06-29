@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D595D7AF286C67D30064E421 /* BLEPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595D7AE286C67D30064E421 /* BLEPeripheral.swift */; };
 		D5CB18D528637BF100031735 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CB18D428637BF100031735 /* AppDelegate.swift */; };
 		D5CB18D728637BF100031735 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CB18D628637BF100031735 /* SceneDelegate.swift */; };
 		D5CB18D928637BF100031735 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CB18D828637BF100031735 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D595D7AE286C67D30064E421 /* BLEPeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEPeripheral.swift; sourceTree = "<group>"; };
 		D5CB18D128637BF100031735 /* Building iOS BLE Applications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Building iOS BLE Applications.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CB18D428637BF100031735 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5CB18D628637BF100031735 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				D5CB18F02866370D00031735 /* DiscoveredPeripheral.swift */,
 				D5E8A702286786B500EA7D52 /* DiscoveredPeripheralCell.swift */,
 				D5E8A703286786B500EA7D52 /* DiscoveredPeripheralCell.xib */,
+				D595D7AE286C67D30064E421 /* BLEPeripheral.swift */,
 			);
 			path = "Building iOS BLE Applications";
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				D5CB18F12866370D00031735 /* DiscoveredPeripheral.swift in Sources */,
 				D5CB18EF2864B22A00031735 /* DiscoveryViewController.swift in Sources */,
 				D5CB18D528637BF100031735 /* AppDelegate.swift in Sources */,
+				D595D7AF286C67D30064E421 /* BLEPeripheral.swift in Sources */,
 				D5CB18D728637BF100031735 /* SceneDelegate.swift in Sources */,
 				D5E8A704286786B500EA7D52 /* DiscoveredPeripheralCell.swift in Sources */,
 				D5CB18EB2864A67200031735 /* BLECentral.swift in Sources */,
