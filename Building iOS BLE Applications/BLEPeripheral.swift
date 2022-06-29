@@ -17,6 +17,10 @@ class BLEPeripheral: NSObject, CBPeripheralManagerDelegate {
         manager = CBPeripheralManager(delegate: self, queue: nil)
     }
     func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager) {
-        <#code#>
+        if peripheral.state == .poweredOn {
+            print("peripheral available")
+        }else{
+            print("peripheral is not available:\(peripheral.state.rawValue)")
+        }
     }
 }
