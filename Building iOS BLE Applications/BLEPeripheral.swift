@@ -8,6 +8,15 @@
 import Foundation
 import CoreBluetooth
 
-class BLEPeripheral: NSObject {
-
+class BLEPeripheral: NSObject, CBPeripheralManagerDelegate {
+    
+    var manager: CBPeripheralManager!
+    
+    override init() {
+        super.init()
+        manager = CBPeripheralManager(delegate: self, queue: nil)
+    }
+    func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager) {
+        <#code#>
+    }
 }
