@@ -1,9 +1,9 @@
-
- AppDelegate.swift
- Building iOS BLE Applications
-
- Created by Samuel Noye on 22/06/2022.
-
+//
+//  AppDelegate.swift
+//  Building iOS BLE Applications
+//
+//  Created by Samuel Noye on 22/06/2022.
+//
 
 import UIKit
 
