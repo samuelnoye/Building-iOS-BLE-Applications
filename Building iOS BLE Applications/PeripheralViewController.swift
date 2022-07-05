@@ -9,10 +9,12 @@ import UIKit
 
 class PeripheralViewController: UIViewController {
 
+    var peripheral: BLEPeripheral!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        peripheral = BLEPeripheral()
     }
     
 
