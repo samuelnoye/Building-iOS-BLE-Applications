@@ -28,7 +28,7 @@ class BLECcentral: NSObject, CBCentralManagerDelegate {
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         if central.state == .poweredOn {
             print("Central powered on")
-          //  scanForPeripherals()
+            scanForPeripherals()
         }else{
             print("Central in unavailable:\(central.state.rawValue)")
         }
