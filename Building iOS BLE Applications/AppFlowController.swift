@@ -16,7 +16,7 @@ class AppFLowController {
     }
     
     func start() {
-        central = BLECcentral() 
+      //  central = BLECcentral() 
         let viewController = DiscoveryViewController()
                 viewController.central = central
                 window.rootViewController = viewController
