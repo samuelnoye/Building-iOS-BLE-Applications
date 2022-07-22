@@ -14,7 +14,7 @@ class DiscoveredPeripheral {
     var advertisementData: [String: Any]
     
     init(peripheral: CBPeripheral, rssi: NSNumber, advertisementData: [String: Any]){
-        self.peripheral = peripheral
+        self.peripheral = peripherals
         self.rssi = rssi
         self.advertisementData = advertisementData
     }
