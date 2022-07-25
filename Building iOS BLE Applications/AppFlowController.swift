@@ -8,7 +8,7 @@
 import UIKit
 
 class AppFLowController {
-    let window: UIWindow
+    //let window: UIWindow
     var central: BLECcentral?
     
     init(window: UIWindow) {
