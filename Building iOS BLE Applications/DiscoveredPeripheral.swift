@@ -11,7 +11,7 @@ import CoreBluetooth
 class DiscoveredPeripheral {
     var peripheral: CBPeripheral
     var rssi: NSNumber
-    var advertisementData: [String: Any]
+   // var advertisementData: [String: Any]
     
     init(peripheral: CBPeripheral, rssi: NSNumber, advertisementData: [String: Any]){
         self.peripheral = peripheral
