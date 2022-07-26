@@ -10,7 +10,7 @@ import UIKit
 class DiscoveryViewController: UITableViewController {
     var central: BLECcentral!
     override func viewDidLoad() {
-      //  super.viewDidLoad()
+        super.viewDidLoad()
 
         central.onDiscovered = { [weak self] in
             self?.tableView.reloadData()
