@@ -10,7 +10,7 @@ import CoreBluetooth
 
 class BLECcentral: NSObject, CBCentralManagerDelegate {
    
-    var manager: CBCentralManager!
+ //   var manager: CBCentralManager!
     var discoveredPeripherals = [DiscoveredPeripheral]()
     var onDiscovered: (()->Void)?
     let service = CBUUID(string: "6E400001-B5A3-F393-E0A9-E50E24DCCA9E")
