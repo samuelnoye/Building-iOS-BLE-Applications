@@ -11,7 +11,7 @@ class DiscoveredPeripheralCell: UITableViewCell {
 
     @IBOutlet weak var identifierLbl: UILabel!
     
-    @IBOutlet weak var rssiLbl: UILabel!
+  //  @IBOutlet weak var rssiLbl: UILabel!
     
     @IBOutlet weak var advertisementlbl: UILabel!
 }
