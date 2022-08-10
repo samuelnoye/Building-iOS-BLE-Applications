@@ -12,7 +12,7 @@ class AppFLowController {
     var central: BLECcentral?
     
     init(window: UIWindow) {
-        self.window = window
+       // self.window = window
     }
     
     func start() {
