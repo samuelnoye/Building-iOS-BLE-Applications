@@ -9,7 +9,7 @@ import Foundation
 import CoreBluetooth
 
 class DiscoveredPeripheral {
-   // var peripheral: CBPeripheral
+    var peripheral: CBPeripheral
     var rssi: NSNumber
     var advertisementData: [String: Any]
     
