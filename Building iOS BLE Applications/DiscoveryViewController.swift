@@ -13,7 +13,7 @@ class DiscoveryViewController: UITableViewController {
         super.viewDidLoad()
 
         central.onDiscovered = { [weak self] in
-            self?.tableView.reloadData()
+         //   self?.tableView.reloadData()
         }
         tableView.register(UINib(nibName: "DiscoveredPeripheralCell", bundle: nil), forCellReuseIdentifier: "DiscoveredPeripheralCell")
     }
