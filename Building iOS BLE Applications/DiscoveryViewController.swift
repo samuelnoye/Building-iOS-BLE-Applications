@@ -15,7 +15,7 @@ class DiscoveryViewController: UITableViewController {
         central.onDiscovered = { [weak self] in
             self?.tableView.reloadData()
         }
-        tableView.register(UINib(nibName: "DiscoveredPeripheralCell", bundle: nil), forCellReuseIdentifier: "DiscoveredPeripheralCell")
+      // tableView.register(UINib(nibName: "DiscoveredPeripheralCell", bundle: nil), forCellReuseIdentifier: "DiscoveredPeripheralCell")
     }
 
     // MARK: - Table view data source
