@@ -39,7 +39,7 @@ class DiscoveryViewController: UITableViewController {
 //        cell.detailTextLabel?.text = peripheral.identifier.uuidString
         let cell = tableView.dequeueReusableCell(withIdentifier: "DiscoveredPeripheralCell", for: indexPath) as! DiscoveredPeripheralCell
         let discoveredPeripheral = central.discoveredPeripherals[indexPath.row]
-       // cell.identifierLbl.text = discoveredPeripheral.peripheral.identifier.uuidString
+        cell.identifierLbl.text = discoveredPeripheral.peripheral.identifier.uuidString
         cell.rssiLbl.text = discoveredPeripheral.rssi.stringValue
         cell.advertisementlbl.text = discoveredPeripheral.advertisementData.debugDescription
         cell.rssiLbl.textColor = .red
