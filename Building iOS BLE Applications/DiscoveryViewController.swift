@@ -42,7 +42,7 @@ class DiscoveryViewController: UITableViewController {
         cell.identifierLbl.text = discoveredPeripheral.peripheral.identifier.uuidString
         cell.rssiLbl.text = discoveredPeripheral.rssi.stringValue
         cell.advertisementlbl.text = discoveredPeripheral.advertisementData.debugDescription
-        cell.rssiLbl.textColor = .green
+        cell.rssiLbl.textColor = .gree
         return cell
     }
     
