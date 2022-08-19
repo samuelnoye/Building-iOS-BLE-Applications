@@ -19,7 +19,7 @@ class AppFLowController {
         central = BLECcentral() 
         let viewController = DiscoveryViewController()
                 viewController.central = central
-             //   window.rootViewController = viewController
+                window.rootViewController = viewController
                 window.makeKeyAndVisible()
                 
     }
