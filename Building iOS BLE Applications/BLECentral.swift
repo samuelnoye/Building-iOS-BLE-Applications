@@ -30,7 +30,7 @@ class BLECcentral: NSObject, CBCentralManagerDelegate {
             print("Central powered on")
             scanForPeripherals()
         }else{
-            print("Central in unavailable:\(central.state.rawValue)")
+          //  print("Central in unavailable:\(central.state.rawValue)")
         }
     }
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
