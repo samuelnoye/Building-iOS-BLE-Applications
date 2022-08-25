@@ -35,7 +35,7 @@ class BLECcentral: NSObject, CBCentralManagerDelegate {
     }
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
       //  discoveredPeripherals.append(DiscoveredPeripheral(peripheral: peripheral, rssi: RSSI, advertisementData: advertisementData))
-        onDiscovered?()
+       // onDiscovered?()
     }
 
 }
